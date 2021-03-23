@@ -13,8 +13,14 @@ auth.onAuthStateChanged(
             var providerData = user.providerData
             user.getIdToken().then(function (accessToken) {})
             // Validate data
+            if (window.location.pathname == '/login.html') {
+                window.location.href = '/index.html'
+            }
         } else {
             // User is signed out.
+            if (window.location.pathname != 'login.html') {
+                window.location.href = '/login.html'
+            }
         }
     },
     function (error) {
