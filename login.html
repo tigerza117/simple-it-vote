@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+            name="viewport"
+        />
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/ui/4.8.0/firebase-ui-auth.js"></script>
+        <link
+            type="text/css"
+            rel="stylesheet"
+            href="https://www.gstatic.com/firebasejs/ui/4.8.0/firebase-ui-auth.css"
+        />
+        <script>
+            var firebaseConfig = {}
+            firebase.initializeApp(firebaseConfig)
+        </script>
+    </head>
+    <body>
+        <div class="login-card">
+            <img class="login-icon" src="img/icon.webp" />
+            <div id="firebaseui-auth-container"></div>
+        </div>
+    </body>
+    <script src="js/login.js"></script>
+    <link type="text/css" rel="stylesheet" href="style/app.css" />
+    <link type="text/css" rel="stylesheet" href="style/login.css" />
+    <link type="text/css" rel="stylesheet" href="style/firebase.css" />
+</html>
