@@ -16,3 +16,17 @@ var uiConfig = {
 
 var ui = new firebaseui.auth.AuthUI(firebase.auth())
 ui.start('#firebaseui-auth-container', uiConfig)
+
+const auth = firebase.auth()
+
+auth.onAuthStateChanged(
+    function (user) {
+        if (user) {
+            // User is signed in.
+            window.location.href = '/index.html'
+        }
+    },
+    function (error) {
+        console.log(error)
+    }
+)

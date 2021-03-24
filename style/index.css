@@ -1,0 +1,11 @@
+.ministry {
+    background: #ff9800;
+    margin-bottom: 0.5em;
+    width: 100%;
+    color: white;
+    font-size: 18px;
+}
+.ministry:disabled {
+    background: #ffcc80;
+    color: white;
+}

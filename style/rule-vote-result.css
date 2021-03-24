@@ -1,0 +1,12 @@
+#submit {
+    background: #1976d2;
+    margin-bottom: 0.5em;
+    width: 100%;
+    color: white;
+    font-size: 18px;
+}
+.title {
+    text-align: center;
+    margin: 1em;
+    font-size: xx-large;
+}

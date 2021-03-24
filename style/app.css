@@ -3,4 +3,60 @@ body {
     margin: 0;
     height: 100vh;
     display: flex;
+    font-family: 'Kanit', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+button,
+input,
+textarea {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 1em;
+    font: inherit;
+    outline: inherit;
+    border-radius: 5px;
+}
+
+.container {
+    margin: auto;
+    background: #fff;
+    max-width: 80vw;
+    padding: 2em;
+    border-radius: 20px;
+}
+
+.logo {
+    display: flex;
+}
+
+.icon {
+    width: 100%;
+    margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 50vw;
+    }
+    .icon {
+        max-width: 30vw;
+    }
+}
+
+@media screen and (min-width: 768px) and (orientation: landscape) {
+    .container {
+        max-width: 70vw;
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    .container {
+        max-width: 60vw;
+    }
 }

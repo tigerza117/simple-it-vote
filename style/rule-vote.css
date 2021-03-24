@@ -1,0 +1,19 @@
+.rule {
+    background: #ffcc80;
+    margin-bottom: 0.5em;
+    width: 100%;
+    color: white;
+    font-size: 18px;
+}
+.rule.active {
+    background: red;
+    color: white;
+}
+
+#submit {
+    background: #1976d2;
+    margin-bottom: 0.5em;
+    width: 100%;
+    color: white;
+    font-size: 18px;
+}
